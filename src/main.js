@@ -4,7 +4,7 @@ import router from "./router";
 import "./assets/css/common.css";
 import api from "./api";
 
-Vue.productionTip.$api = api;
+Vue.prototype.$api = api;
 Vue.config.productionTip = false;
 
 new Vue({
